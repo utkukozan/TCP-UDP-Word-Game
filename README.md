@@ -24,19 +24,19 @@ This word game challenges players to come up with words based on the last two le
 
 ## Game Versions
 
-### [Standard Version](standard/README.md)
+### [Standard Version](StandardWordGame/README.md)
 
 In the standard version, the player must enter a word within a certain time limit. The word must be formed from the last two letters of the previous word. This mode is single-player and does not involve any network communication.
 
-### [TCP Version](tcp/README.md)
+### [TCP Version](WithTCPWordGame/README.md)
 
 In the TCP version, the game is played between a server and a client. The server and client establish a connection using the TCP protocol. Players take turns to enter words within a certain time limit. The word must be formed from the last two letters of the previous word. This version ensures reliable communication due to the inherent properties of TCP (e.g., connection-oriented, error-checking, and flow control).
 
-### [UDP Version](udp/README.md)
+### [UDP Version](WithUDPWordGame/README.md)
 
 In the UDP version, the game is also played between a server and a client. However, the communication uses the UDP protocol. Players send and receive words in packets, and the game requires each player to send a "play" request to initiate a turn. The word must be formed from the last two letters of the previous word. Unlike TCP, UDP is connectionless and does not guarantee packet delivery, order, or error-checking, making it a faster but less reliable option.
 
-### [UDP with ACK Version](udp_ack/README.md)
+### [UDP with ACK Version](WithUDPAckWordGame/README.md)
 
 The UDP with ACK version builds upon the UDP version by adding an acknowledgment mechanism. In this version, after a player sends a word, they wait for an acknowledgment from the other player indicating that the packet was received successfully. This addition ensures more reliable communication compared to standard UDP, as it allows for retransmission of lost packets.
 
