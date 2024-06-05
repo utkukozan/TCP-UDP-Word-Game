@@ -42,7 +42,7 @@ The UDP with ACK version builds upon the UDP version by adding an acknowledgment
 
 ## Setup and Running the Game
 
-To run any version of the game, follow the instructions in the specific README.md file** for that version to compile and run the game.
+To run any version of the game, follow the instructions in the specific README.md file for that version to compile and run the game.
 
 ## Contributing
 
